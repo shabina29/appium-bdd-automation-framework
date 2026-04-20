@@ -1,14 +1,24 @@
 
 
-<suite name="DemoQA Suite" verbose="1">
+<suite name="DemoQA Mobile Automation Suite" verbose="1">
 
-```
-<test name="Cucumber Tests">
-    <classes>
-        <!-- Make sure this package matches your runner -->
-        <class name="com.runner.TestRunner"/>
-    </classes>
-</test>
-```
+    <!-- Listener for Extent Report -->
+    <listeners>
+        <listener class-name="com.framework.utils.ExtentListener"/>
+    </listeners>
+
+    <!-- Test Configuration -->
+    <test name="Cucumber Appium Tests">
+
+        <!-- Parameters (optional but good for CI) -->
+        <parameter name="env" value="QA"/>
+        <parameter name="device" value="ANDROID"/>
+
+        <classes>
+            <!-- Cucumber Runner Class -->
+            <class name="com.runner.TestRunner"/>
+        </classes>
+
+    </test>
 
 </suite>

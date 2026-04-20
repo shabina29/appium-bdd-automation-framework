@@ -1,2 +1,3 @@
 com\framework\stepdefinitions\AppLaunchSteps.class
+com\framework\hooks\ExecutionHooks.class
 com\runner\TestRunner.class
