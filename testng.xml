@@ -1,0 +1,14 @@
+
+
+<suite name="DemoQA Suite" verbose="1">
+
+```
+<test name="Cucumber Tests">
+    <classes>
+        <!-- Make sure this package matches your runner -->
+        <class name="com.runner.TestRunner"/>
+    </classes>
+</test>
+```
+
+</suite>
