@@ -13,7 +13,7 @@ pipeline {
     }
 
     triggers {
-        githubPush()   // Auto build on git push 🔥
+        githubPush()
     }
 
     stages {
@@ -26,13 +26,13 @@ pipeline {
 
         stage('Clean Workspace') {
             steps {
-                sh 'mvn clean'
+                bat 'mvn clean'
             }
         }
 
         stage('Build & Execute Tests') {
             steps {
-                sh "mvn test -Denv=${ENV} -Ddevice=${DEVICE}"
+                bat "mvn test -Denv=%ENV% -Ddevice=%DEVICE%"
             }
         }
 
@@ -44,7 +44,7 @@ pipeline {
 
         stage('Archive Reports') {
             steps {
-                archiveArtifacts artifacts: '**/test-output/**', fingerprint: true
+                archiveArtifacts artifacts: 'test-output/**', fingerprint: true
             }
         }
     }
