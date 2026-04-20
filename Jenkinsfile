@@ -13,7 +13,7 @@ pipeline {
     }
 
     triggers {
-        githubPush()   // Auto build on git push
+        githubPush()
     }
 
     stages {
