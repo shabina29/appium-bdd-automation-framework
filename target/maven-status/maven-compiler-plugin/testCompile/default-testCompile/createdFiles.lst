@@ -1,0 +1,4 @@
+com\framework\stepdefinitions\AppLaunchSteps.class
+com\framework\stepdefinitions\ContentSteps.class
+com\runner\TestRunner.class
+com\framework\hooks\ExecutionHooks.class

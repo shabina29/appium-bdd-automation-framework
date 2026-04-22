@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="13" passed="8" failed="5" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-04-21T14:34:52 IST" name="Default suite" finished-at="2026-04-21T14:37:43 IST" duration-ms="171819">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.TestRunner@2118cddf]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2026-04-21T14:34:52 IST" name="Default test" finished-at="2026-04-21T14:37:43 IST" duration-ms="171819">
+      <class name="com.runner.TestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.runner.TestRunner@2118cddf]" started-at="2026-04-21T14:34:52 IST" name="setUpClass" finished-at="2026-04-21T14:34:52 IST" duration-ms="175" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@4a058df8]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.TestRunner@2118cddf]" started-at="2026-04-21T14:34:52 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-21T14:34:58 IST" duration-ms="6100" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify app launch"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["App Launch"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.TestRunner@2118cddf]" started-at="2026-04-21T14:34:58 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-21T14:35:05 IST" duration-ms="7447" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify user can navigate to Content screen"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Content Screen Validation in API Demos App"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.TestRunner@2118cddf]" started-at="2026-04-21T14:35:05 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-21T14:35:21 IST" duration-ms="15976" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify all options are visible in Content screen"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Content Screen Validation in API Demos App"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.TestRunner@2118cddf]" started-at="2026-04-21T14:35:21 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-21T14:35:42 IST" duration-ms="20174" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify user can open each Content option"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Content Screen Validation in API Demos App"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Assets screen not displayed]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Assets screen not displayed
+at com.framework.stepdefinitions.ContentSteps.verifyMenuScreen(ContentSteps.java:77)
+at ✽."Assets" screen should be displayed(file:///D:/Software/Automation/AppAutomation/demoqa-android-automation/src/test/resources/features/Content.feature:24)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.TestRunner@2118cddf]" started-at="2026-04-21T14:35:42 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-21T14:36:01 IST" duration-ms="19469" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify user can open each Content option"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Content Screen Validation in API Demos App"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Clipboard screen not displayed]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Clipboard screen not displayed
+at com.framework.stepdefinitions.ContentSteps.verifyMenuScreen(ContentSteps.java:77)
+at ✽."Clipboard" screen should be displayed(file:///D:/Software/Automation/AppAutomation/demoqa-android-automation/src/test/resources/features/Content.feature:24)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.TestRunner@2118cddf]" started-at="2026-04-21T14:36:01 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-21T14:36:20 IST" duration-ms="19183" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify user can open each Content option"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Content Screen Validation in API Demos App"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Provider screen not displayed]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Provider screen not displayed
+at com.framework.stepdefinitions.ContentSteps.verifyMenuScreen(ContentSteps.java:77)
+at ✽."Provider" screen should be displayed(file:///D:/Software/Automation/AppAutomation/demoqa-android-automation/src/test/resources/features/Content.feature:24)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.TestRunner@2118cddf]" started-at="2026-04-21T14:36:20 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-21T14:36:29 IST" duration-ms="9113" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify user can open each Content option"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Content Screen Validation in API Demos App"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.TestRunner@2118cddf]" started-at="2026-04-21T14:36:29 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-21T14:36:47 IST" duration-ms="17450" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify back navigation from Content screen"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Content Screen Validation in API Demos App"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.17'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [3cdb4b95-2c0b-470a-b646-11b5807ebe28, findElement {using=accessibility id, value=API Demos}]
+Capabilities {appium:app: D:\Software\Automation\AppA..., appium:appActivity: .ApiDemos, appium:appPackage: io.appium.android.apis, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {app: D:\Software\Automation\AppA..., appActivity: .ApiDemos, appPackage: io.appium.android.apis, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: emulator-5554, noReset: false, platformName: ANDROID, systemPort: 8200, udid: emulator-5554}, appium:deviceApiLevel: 31, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x1920, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:noReset: false, appium:pixelRatio: 2.625, appium:platformVersion: 12, appium:statBarHeight: 63, appium:systemPort: 8200, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:viewportRect: {height: 1857, left: 0, top: 63, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 3cdb4b95-2c0b-470a-b646-11b5807ebe28]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.17'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [3cdb4b95-2c0b-470a-b646-11b5807ebe28, findElement {using=accessibility id, value=API Demos}]
+Capabilities {appium:app: D:\Software\Automation\AppA..., appium:appActivity: .ApiDemos, appium:appPackage: io.appium.android.apis, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {app: D:\Software\Automation\AppA..., appActivity: .ApiDemos, appPackage: io.appium.android.apis, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: emulator-5554, noReset: false, platformName: ANDROID, systemPort: 8200, udid: emulator-5554}, appium:deviceApiLevel: 31, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x1920, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:noReset: false, appium:pixelRatio: 2.625, appium:platformVersion: 12, appium:statBarHeight: 63, appium:systemPort: 8200, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:viewportRect: {height: 1857, left: 0, top: 63, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 3cdb4b95-2c0b-470a-b646-11b5807ebe28
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+at com.framework.screens.android.ContentPage.isHomeScreenDisplayed(ContentPage.java:84)
+at com.framework.stepdefinitions.ContentSteps.verifyHomeScreen(ContentSteps.java:84)
+at ✽.user should be on home screen(file:///D:/Software/Automation/AppAutomation/demoqa-android-automation/src/test/resources/features/Content.feature:37)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.TestRunner@2118cddf]" started-at="2026-04-21T14:36:47 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-21T14:36:53 IST" duration-ms="6605" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify Content screen is scrollable"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Content Screen Validation in API Demos App"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.TestRunner@2118cddf]" started-at="2026-04-21T14:36:53 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-21T14:37:06 IST" duration-ms="12520" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify app does not crash on multiple taps"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Content Screen Validation in API Demos App"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.TestRunner@2118cddf]" started-at="2026-04-21T14:37:06 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-21T14:37:11 IST" duration-ms="5576" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify accessibility id for Content element"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Content Screen Validation in API Demos App"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.TestRunner@2118cddf]" started-at="2026-04-21T14:37:11 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-21T14:37:27 IST" duration-ms="15090" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify handling of invalid element"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Content Screen Validation in API Demos App"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.TestRunner@2118cddf]" started-at="2026-04-21T14:37:27 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-21T14:37:43 IST" duration-ms="16867" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify Content screen load time"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Content Screen Validation in API Demos App"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.17'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [7ac4b7a6-d419-4bce-8bc2-bc1793656813, findElement {using=accessibility id, value=Content}]
+Capabilities {appium:app: D:\Software\Automation\AppA..., appium:appActivity: .ApiDemos, appium:appPackage: io.appium.android.apis, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {app: D:\Software\Automation\AppA..., appActivity: .ApiDemos, appPackage: io.appium.android.apis, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: emulator-5554, noReset: false, platformName: ANDROID, systemPort: 8200, udid: emulator-5554}, appium:deviceApiLevel: 31, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x1920, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:noReset: false, appium:pixelRatio: 2.625, appium:platformVersion: 12, appium:statBarHeight: 63, appium:systemPort: 8200, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:viewportRect: {height: 1857, left: 0, top: 63, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 7ac4b7a6-d419-4bce-8bc2-bc1793656813]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.17'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [7ac4b7a6-d419-4bce-8bc2-bc1793656813, findElement {using=accessibility id, value=Content}]
+Capabilities {appium:app: D:\Software\Automation\AppA..., appium:appActivity: .ApiDemos, appium:appPackage: io.appium.android.apis, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {app: D:\Software\Automation\AppA..., appActivity: .ApiDemos, appPackage: io.appium.android.apis, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: emulator-5554, noReset: false, platformName: ANDROID, systemPort: 8200, udid: emulator-5554}, appium:deviceApiLevel: 31, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x1920, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:noReset: false, appium:pixelRatio: 2.625, appium:platformVersion: 12, appium:statBarHeight: 63, appium:systemPort: 8200, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:viewportRect: {height: 1857, left: 0, top: 63, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 7ac4b7a6-d419-4bce-8bc2-bc1793656813
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+at com.framework.screens.android.ContentPage.measureLoadTime(ContentPage.java:108)
+at com.framework.stepdefinitions.ContentSteps.performanceCheck(ContentSteps.java:115)
+at ✽.screen should load within acceptable time(file:///D:/Software/Automation/AppAutomation/demoqa-android-automation/src/test/resources/features/Content.feature:61)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.runner.TestRunner@2118cddf]" started-at="2026-04-21T14:37:43 IST" name="tearDownClass" finished-at="2026-04-21T14:37:43 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.runner.TestRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

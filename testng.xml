@@ -1,0 +1,29 @@
+
+
+<suite name="DemoQA Suite" parallel="methods" thread-count="2">
+    <!-- 👉 Main TestNG suite -->
+    <!-- 👉 parallel="methods" → runs test methods (scenarios) in parallel -->
+    <!-- 👉 thread-count="2" → maximum 2 parallel threads (can scale execution) -->
+
+    <listeners>
+        <!-- 👉 Listeners are used to hook into test execution lifecycle -->
+
+        <listener class-name="com.framework.utils.ExtentListener"/>
+        <!-- 👉 Custom listener to integrate Extent Reports -->
+        <!-- 👉 Captures test start, pass, fail, and logs into report -->
+    </listeners>
+
+    <test name="Cucumber Tests">
+        <!-- 👉 Logical grouping of test execution -->
+        <!-- 👉 Can have multiple <test> blocks for different environments/devices -->
+
+        <classes>
+            <!-- 👉 Specifies which test classes to execute -->
+
+            <class name="com.runner.TestRunner"/>
+            <!-- 👉 This is the Cucumber TestNG runner class -->
+            <!-- 👉 It triggers execution of all feature files -->
+        </classes>
+    </test>
+
+</suite>

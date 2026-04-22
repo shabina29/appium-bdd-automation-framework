@@ -1,0 +1,9 @@
+0000000000000000000000000000000000000000 6db09240950359fa105a232db989cd68f538989b Shabina Shahin <sshahinece@gmail.com> 1776714364 +0530	commit (initial): Initial commit: Mobile automation framework with Appium, Cucumber, TestNG
+6db09240950359fa105a232db989cd68f538989b 0000000000000000000000000000000000000000 Shabina Shahin <sshahinece@gmail.com> 1776714373 +0530	Branch: renamed refs/heads/master to refs/heads/main
+0000000000000000000000000000000000000000 6db09240950359fa105a232db989cd68f538989b Shabina Shahin <sshahinece@gmail.com> 1776714373 +0530	Branch: renamed refs/heads/master to refs/heads/main
+6db09240950359fa105a232db989cd68f538989b 6db09240950359fa105a232db989cd68f538989b Shabina Shahin <sshahinece@gmail.com> 1776714991 +0530	checkout: moving from main to feature/reporting-config
+6db09240950359fa105a232db989cd68f538989b e11488db8e54d1276f60d47dbd217928e2e30551 Shabina Shahin <sshahinece@gmail.com> 1776715681 +0530	commit: CI setup with extent reporting and screenshots
+e11488db8e54d1276f60d47dbd217928e2e30551 4b5d06580d4243e0e2c88f33934a005246bc9ee0 Shabina Shahin <sshahinece@gmail.com> 1776716567 +0530	commit: Fixed Jenkinsfile for Windows (bat instead of sh)
+4b5d06580d4243e0e2c88f33934a005246bc9ee0 7105c6d000e25d8b2686c50f32d6b535d0901ddb Shabina Shahin <sshahinece@gmail.com> 1776717118 +0530	commit: Removed build files and added gitignore
+7105c6d000e25d8b2686c50f32d6b535d0901ddb 7105c6d000e25d8b2686c50f32d6b535d0901ddb Shabina Shahin <sshahinece@gmail.com> 1776717437 +0530	checkout: moving from feature/reporting-config to feature/jenkins-fix
+7105c6d000e25d8b2686c50f32d6b535d0901ddb 59ee52f7a27165c63b055e398c2e8deeac7bf302 Shabina Shahin <sshahinece@gmail.com> 1776717461 +0530	commit: Fix Jenkins pipeline for Windows (bat instead of sh)

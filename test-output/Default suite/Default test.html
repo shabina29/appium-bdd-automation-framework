@@ -1,0 +1,281 @@
+<html>
+<head>
+<title>TestNG:  Default test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Default test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>8/5/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Apr 21 14:34:52 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>171 seconds (171819 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Content screen load time", "Content Screen Validation in API Demos App"</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.17&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [7ac4b7a6-d419-4bce-8bc2-bc1793656813, findElement {using=accessibility id, value=Content}]
+Capabilities {appium:app: D:\Software\Automation\AppA..., appium:appActivity: .ApiDemos, appium:appPackage: io.appium.android.apis, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {app: D:\Software\Automation\AppA..., appActivity: .ApiDemos, appPackage: io.appium.android.apis, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: emulator-5554, noReset: false, platformName: ANDROID, systemPort: 8200, udid: emulator-5554}, appium:deviceApiLevel: 31, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x1920, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:noReset: false, appium:pixelRatio: 2.625, appium:platformVersion: 12, appium:statBarHeight: 63, appium:systemPort: 8200, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:viewportRect: {height: 1857, left: 0, top: 63, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 7ac4b7a6-d419-4bce-8bc2-bc1793656813
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at com.framework.screens.android.ContentPage.measureLoadTime(ContentPage.java:108)
+	at com.framework.stepdefinitions.ContentSteps.performanceCheck(ContentSteps.java:115)
+	at ✽.screen should load within acceptable time(file:///D:/Software/Automation/AppAutomation/demoqa-android-automation/src/test/resources/features/Content.feature:61)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1460139539", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1460139539'><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.17&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [7ac4b7a6-d419-4bce-8bc2-bc1793656813, findElement {using=accessibility id, value=Content}]
+Capabilities {appium:app: D:\Software\Automation\AppA..., appium:appActivity: .ApiDemos, appium:appPackage: io.appium.android.apis, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {app: D:\Software\Automation\AppA..., appActivity: .ApiDemos, appPackage: io.appium.android.apis, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: emulator-5554, noReset: false, platformName: ANDROID, systemPort: 8200, udid: emulator-5554}, appium:deviceApiLevel: 31, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x1920, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:noReset: false, appium:pixelRatio: 2.625, appium:platformVersion: 12, appium:statBarHeight: 63, appium:systemPort: 8200, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:viewportRect: {height: 1857, left: 0, top: 63, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 7ac4b7a6-d419-4bce-8bc2-bc1793656813
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at com.framework.screens.android.ContentPage.measureLoadTime(ContentPage.java:108)
+	at com.framework.stepdefinitions.ContentSteps.performanceCheck(ContentSteps.java:115)
+	at ✽.screen should load within acceptable time(file:///D:/Software/Automation/AppAutomation/demoqa-android-automation/src/test/resources/features/Content.feature:61)
+</pre></div></td>
+<td>16</td>
+<td>com.runner.TestRunner@2118cddf</td></tr>
+<tr>
+<td title='com.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user can open each Content option", "Content Screen Validation in API Demos App"</td>
+<td><div><pre>java.lang.AssertionError: Provider screen not displayed
+	at com.framework.stepdefinitions.ContentSteps.verifyMenuScreen(ContentSteps.java:77)
+	at ✽.&quot;Provider&quot; screen should be displayed(file:///D:/Software/Automation/AppAutomation/demoqa-android-automation/src/test/resources/features/Content.feature:24)
+</pre></div><a href='#' onClick='toggleBox("stack-trace541769471", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace541769471'><pre>java.lang.AssertionError: Provider screen not displayed
+	at com.framework.stepdefinitions.ContentSteps.verifyMenuScreen(ContentSteps.java:77)
+	at ✽.&quot;Provider&quot; screen should be displayed(file:///D:/Software/Automation/AppAutomation/demoqa-android-automation/src/test/resources/features/Content.feature:24)
+</pre></div></td>
+<td>19</td>
+<td>com.runner.TestRunner@2118cddf</td></tr>
+<tr>
+<td title='com.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify back navigation from Content screen", "Content Screen Validation in API Demos App"</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.17&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [3cdb4b95-2c0b-470a-b646-11b5807ebe28, findElement {using=accessibility id, value=API Demos}]
+Capabilities {appium:app: D:\Software\Automation\AppA..., appium:appActivity: .ApiDemos, appium:appPackage: io.appium.android.apis, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {app: D:\Software\Automation\AppA..., appActivity: .ApiDemos, appPackage: io.appium.android.apis, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: emulator-5554, noReset: false, platformName: ANDROID, systemPort: 8200, udid: emulator-5554}, appium:deviceApiLevel: 31, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x1920, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:noReset: false, appium:pixelRatio: 2.625, appium:platformVersion: 12, appium:statBarHeight: 63, appium:systemPort: 8200, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:viewportRect: {height: 1857, left: 0, top: 63, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 3cdb4b95-2c0b-470a-b646-11b5807ebe28
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at com.framework.screens.android.ContentPage.isHomeScreenDisplayed(ContentPage.java:84)
+	at com.framework.stepdefinitions.ContentSteps.verifyHomeScreen(ContentSteps.java:84)
+	at ✽.user should be on home screen(file:///D:/Software/Automation/AppAutomation/demoqa-android-automation/src/test/resources/features/Content.feature:37)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1845746463", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1845746463'><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.17&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [3cdb4b95-2c0b-470a-b646-11b5807ebe28, findElement {using=accessibility id, value=API Demos}]
+Capabilities {appium:app: D:\Software\Automation\AppA..., appium:appActivity: .ApiDemos, appium:appPackage: io.appium.android.apis, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {app: D:\Software\Automation\AppA..., appActivity: .ApiDemos, appPackage: io.appium.android.apis, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: emulator-5554, noReset: false, platformName: ANDROID, systemPort: 8200, udid: emulator-5554}, appium:deviceApiLevel: 31, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x1920, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:noReset: false, appium:pixelRatio: 2.625, appium:platformVersion: 12, appium:statBarHeight: 63, appium:systemPort: 8200, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:viewportRect: {height: 1857, left: 0, top: 63, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 3cdb4b95-2c0b-470a-b646-11b5807ebe28
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at com.framework.screens.android.ContentPage.isHomeScreenDisplayed(ContentPage.java:84)
+	at com.framework.stepdefinitions.ContentSteps.verifyHomeScreen(ContentSteps.java:84)
+	at ✽.user should be on home screen(file:///D:/Software/Automation/AppAutomation/demoqa-android-automation/src/test/resources/features/Content.feature:37)
+</pre></div></td>
+<td>17</td>
+<td>com.runner.TestRunner@2118cddf</td></tr>
+<tr>
+<td title='com.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user can open each Content option", "Content Screen Validation in API Demos App"</td>
+<td><div><pre>java.lang.AssertionError: Assets screen not displayed
+	at com.framework.stepdefinitions.ContentSteps.verifyMenuScreen(ContentSteps.java:77)
+	at ✽.&quot;Assets&quot; screen should be displayed(file:///D:/Software/Automation/AppAutomation/demoqa-android-automation/src/test/resources/features/Content.feature:24)
+</pre></div><a href='#' onClick='toggleBox("stack-trace220689785", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace220689785'><pre>java.lang.AssertionError: Assets screen not displayed
+	at com.framework.stepdefinitions.ContentSteps.verifyMenuScreen(ContentSteps.java:77)
+	at ✽.&quot;Assets&quot; screen should be displayed(file:///D:/Software/Automation/AppAutomation/demoqa-android-automation/src/test/resources/features/Content.feature:24)
+</pre></div></td>
+<td>20</td>
+<td>com.runner.TestRunner@2118cddf</td></tr>
+<tr>
+<td title='com.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user can open each Content option", "Content Screen Validation in API Demos App"</td>
+<td><div><pre>java.lang.AssertionError: Clipboard screen not displayed
+	at com.framework.stepdefinitions.ContentSteps.verifyMenuScreen(ContentSteps.java:77)
+	at ✽.&quot;Clipboard&quot; screen should be displayed(file:///D:/Software/Automation/AppAutomation/demoqa-android-automation/src/test/resources/features/Content.feature:24)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1712635211", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1712635211'><pre>java.lang.AssertionError: Clipboard screen not displayed
+	at com.framework.stepdefinitions.ContentSteps.verifyMenuScreen(ContentSteps.java:77)
+	at ✽.&quot;Clipboard&quot; screen should be displayed(file:///D:/Software/Automation/AppAutomation/demoqa-android-automation/src/test/resources/features/Content.feature:24)
+</pre></div></td>
+<td>19</td>
+<td>com.runner.TestRunner@2118cddf</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify handling of invalid element", "Content Screen Validation in API Demos App"</td>
+<td></td>
+<td>15</td>
+<td>com.runner.TestRunner@2118cddf</td></tr>
+<tr>
+<td title='com.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify app does not crash on multiple taps", "Content Screen Validation in API Demos App"</td>
+<td></td>
+<td>12</td>
+<td>com.runner.TestRunner@2118cddf</td></tr>
+<tr>
+<td title='com.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify app launch", "App Launch"</td>
+<td></td>
+<td>6</td>
+<td>com.runner.TestRunner@2118cddf</td></tr>
+<tr>
+<td title='com.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify all options are visible in Content screen", "Content Screen Validation in API Demos App"</td>
+<td></td>
+<td>15</td>
+<td>com.runner.TestRunner@2118cddf</td></tr>
+<tr>
+<td title='com.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user can open each Content option", "Content Screen Validation in API Demos App"</td>
+<td></td>
+<td>9</td>
+<td>com.runner.TestRunner@2118cddf</td></tr>
+<tr>
+<td title='com.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify accessibility id for Content element", "Content Screen Validation in API Demos App"</td>
+<td></td>
+<td>5</td>
+<td>com.runner.TestRunner@2118cddf</td></tr>
+<tr>
+<td title='com.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user can navigate to Content screen", "Content Screen Validation in API Demos App"</td>
+<td></td>
+<td>7</td>
+<td>com.runner.TestRunner@2118cddf</td></tr>
+<tr>
+<td title='com.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Content screen is scrollable", "Content Screen Validation in API Demos App"</td>
+<td></td>
+<td>6</td>
+<td>com.runner.TestRunner@2118cddf</td></tr>
+</table><p>
+</body>
+</html>

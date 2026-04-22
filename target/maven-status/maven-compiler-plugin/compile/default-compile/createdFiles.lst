@@ -1,0 +1,11 @@
+com\framework\screens\android\ContentPage.class
+com\framework\utils\ExtentManager.class
+com\framework\utils\GestureUtils.class
+com\framework\driver\AndroidDriverManager.class
+com\framework\screens\android\AppLaunch.class
+com\framework\utils\DriverUtils.class
+com\framework\utils\WaitUtils.class
+com\framework\utils\ScreenshotUtils.class
+com\framework\driver\DriverManager.class
+com\framework\utils\ElementActions.class
+com\framework\utils\ExtentListener.class
